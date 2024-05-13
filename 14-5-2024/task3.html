@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+
+            display: inline-block;
+            border:1px dashed black;
+        }
+
+        .one {
+            background-color: red;
+            height: 100px;
+            width: 100px;
+            
+        }
+        .Three{
+            background-color: red;
+            height: 100px;
+            width: 100px;
+        }
+         .Four{
+            background-color: red;
+            height: 100px;
+            width: 100px;
+        }
+        .Two{
+            background-color: green;
+            height: 100px;
+            width: 100px;
+        }
+        .Two1{
+            position: relative;
+            background-color: green;
+            height: 100px;
+            width: 100px;
+            left:30px;
+            top: 30px;
+        }
+        .relative{
+        position: relative;
+        }
+        .Two2{
+            position: absolute;
+            background-color: green;
+            height: 100px;
+            width: 100px;
+            left:10px;
+            top: 15px;
+           
+            
+        }
+    </style>
+</head>
+<body>
+    <p>Postion : static</p>
+    <div class="static">
+    <div class="one">one</div>
+    <div class="Two">Two</div>
+    <div class="Three">Three</div>
+    <div class="Four">Four</div>
+    </div>
+    <p>Postion : relative</p>
+    <div class="relative">
+    <div class="one">one</div>
+    <div class="Two1">Two</div>
+    <div class="Three">Three</div>
+    <div class="Four">Four</div>
+    </div>
+    <p>Postion : relative</p>
+    <div class="relative">
+    <div class="one">one</div>
+    <div class="Two2">Two</div>
+    <div class="Three">Three</div>
+    <div class="Four">Four</div>
+    </div>
+</body>
+</html>

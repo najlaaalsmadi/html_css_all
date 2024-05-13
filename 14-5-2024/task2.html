@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task2</title>
+    <style>
+        .card1{
+             display: flex;
+             /*
+             تُستخدم الخاصية 
+             display: flex; في CSS لتحويل عنصر 
+             HTML إلى عنصر "مرن" (flexbox). 
+             وظيفة هذه الخاصية هي ترتيب عناصر الصفحة بشكل مرن وفقًا للتوجيه الذي يحدده المطور. تجعل هذه الخاصية
+              من السهل تنظيم وتوزيع عناصر الصفحة في أي اتجاه (أفقي أو عمودي)،
+               وتمكنك أيضًا من تحديد توزيع المساحة وتنظيمها بين العناصر المرنة.
+               */
+            
+ }
+        .card{
+            box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            max-width: 210px;
+            max-height: 50%;
+            display: grid;
+            grid-gap: 20px;
+            margin: 0 10px;
+            /*
+           
+1. `display: grid;`: هذه الخاصية تحول العنصر HTML إلى عنصر شبكي، مما يعني أن العنصر سيعتبر حاوية
+ لنظام شبكي لتنظيم العناصر بداخله بطريقة منتظمة ومرنة.
+
+2. `grid-gap: 20px;`: هذه الخاصية تحدد المسافة بين العناصر في الشبكة.
+ بتعيين قيمة 20 بكسل، يتم إنشاء مسافة بحجم 20 بكسل بين كل عنصرين متجاورين داخل الشبكة.            
+           
+ يمكن تنظيم العناصر بداخله في شبكة من الصفوف والأعمدة. يمكن تحديد توزيع ومواقع العناصر بشكل مرن ومتقدم.
+ 
+            */
+        }
+.footer{
+   border:none;
+   outline: 0;
+   padding: 10px;
+   color:white;
+   background-color: black;
+   opacity: 0.7;
+   width: 91%;
+   max-height: 80px;
+  font-size: 20px;
+
+       }
+       .card img {
+    width: 100%;
+    object-fit: cover;
+}
+p{
+    padding: 10px;
+}
+
+
+        
+    </style>
+</head>
+<body>
+    <div class="card1">
+    <div class="card">
+<h2 style="text-align: center;">A Short heading</h2>
+<img src="12.jpg" alt="" width="100%">
+<p>The idea of reaching theNorth Pole by means ofballoons appears to havebeen entertained manyyears ago.</p>
+</div>
+<div class="card">
+    <h2 style="text-align: center;">A Short heading</h2>
+    <img src="2.jpg" alt="">
+    <p>short content.</p>
+    <div class="footer">
+      I have footer!
+    </div>
+    </div>
+    <div class="card">
+        <h2 style="text-align: center;">A longer heading in this card</h2>
+        <img src="3.jpg" alt="" width="100%">
+        <p>In a curious work,published in Paris in 1863 by Delaville Dedreux, thereis a suggestion for reachingthe North Pole by anaerostat</p>
+        <div class="footer">
+            I have footer!
+          </div>
+    </div>
+</div>
+</body>
+</html>
