@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex box</title>
+
+
+    <style>
+        body {
+
+            flex-direction: column;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            padding: 10px 80px;
+
+
+        }
+        .flex-wrap {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            border: 2px dashed black ;
+            
+
+        }
+        .flex-container-j-center {
+            display: flex;
+            flex-direction: row;
+            border: 2px dashed black ;
+            justify-content: center;
+            
+
+        }
+        .flex-container-j-s-b {
+            display: flex;
+            flex-direction: row;
+            border: 2px dashed black ;
+            justify-content: space-between;
+            
+
+        }
+        .flex-container-j-s-around {
+            display: flex;
+            flex-direction: row;
+            border: 2px dashed black ;
+            justify-content: space-around;
+            
+            
+
+        }
+        .flex-container-j-s-evenly {
+            display: flex;
+            flex-direction: row;
+            border: 2px dashed black ;
+            justify-content: space-evenly;
+            
+
+        }
+        .align-item-flex-start {
+            height: 200px;
+            display: flex;
+            flex-direction: row;
+            border: 2px dashed black ;
+            align-items: flex-start;
+            justify-content: space-around;
+            
+
+        }
+        .align-item-flex-end {
+            height: 200px;
+            display: flex;
+            flex-direction: row;
+            border: 2px dashed black ;
+            align-items: flex-end;
+            justify-content: space-around;
+            
+
+        }
+        .align-item-center {
+            height: 200px;
+            display: flex;
+            flex-direction: row;
+            border: 2px dashed black ;
+            align-items: center;
+            justify-content: space-around;
+            
+
+        }
+        .align-item-stretch {
+            height: 200px;
+            display: flex;
+            flex-direction: row;
+            border: 2px dashed black ;
+            align-items: stretch;
+            justify-content: space-around;
+            
+
+        }
+        .item {
+            height: 100px;
+            width: 100px;
+            background-color: darkslateblue;
+            border: 2px solid black;
+            
+        }
+        .item-1 {
+            height: auto;
+            width: auto;
+            background-color: darkslateblue;
+            border: 2px solid black;
+            
+        }
+        .t1 {
+            margin: 35px;
+            font-size: x-large;
+            color: white;
+        }
+        h2 {
+            font-family: consolas;
+            color: blue;
+            text-shadow: 0.5px 1px 1px black;
+        }
+    </style>
+</head>
+<body>
+
+    <h1> Flex Box </h1>
+    <h1>1- Flex-direction </h1>
+    <h2>flex-direction : row ;</h2>
+    <div class="flex-container-j-s-evenly"> 
+
+         <div class="item"><p class="t1">1</p></div>
+         <div class="item"><p class="t1">2</p></div>
+         <div class="item"><p class="t1">3</p></div>
+         <div class="item"><p class="t1">4</p></div>
+         <div class="item"><p class="t1">5</p></div>
+
+    </div>
+    <h2>flex-direction : column ;</h2>
+    <div class="flex-container-j-s-evenly" style="flex-direction: column; align-items: center; width: 300px; margin: auto;"> 
+
+         <div class="item"><p class="t1">1</p></div>
+         <div class="item"><p class="t1">2</p></div>
+         <div class="item"><p class="t1">3</p></div>
+         <div class="item"><p class="t1">4</p></div>
+         <div class="item"><p class="t1">5</p></div>
+
+    </div>
+    <br>
+    <h1>2- flex-wrap</h1>
+    <h2>flex-wrap: wrap;</h2>
+    <div class="flex-wrap"> 
+
+         <div class="item"><p class="t1">1</p></div>
+         <div class="item"><p class="t1">2</p></div>
+         <div class="item"><p class="t1">3</p></div>
+         <div class="item"><p class="t1">4</p></div>
+         <div class="item"><p class="t1">5</p></div>
+         <div class="item"><p class="t1">6</p></div>
+         <div class="item"><p class="t1">7</p></div>
+         <div class="item"><p class="t1">8</p></div>
+
+    </div>
+    <br>
+    
+    
+    <h1>3- Justify content</h1>
+    <h2>justify content : center;</h2>
+    <div class="flex-container-j-center"> 
+
+         <div class="item"><p class="t1">1</p></div>
+         <div class="item"><p class="t1">2</p></div>
+         <div class="item"><p class="t1">3</p></div>
+         <div class="item"><p class="t1">4</p></div>
+         <div class="item"><p class="t1">5</p></div>
+
+    </div>
+    <br>
+    <h2>justify content : space between;</h2>
+    <div class="flex-container-j-s-b"> 
+
+         <div class="item"><p class="t1">1</p></div>
+         <div class="item"><p class="t1">2</p></div>
+         <div class="item"><p class="t1">3</p></div>
+         <div class="item"><p class="t1">4</p></div>
+         <div class="item"><p class="t1">5</p></div>
+
+    </div>
+    <br>
+    <h2>justify content : space around;</h2>
+    <div class="flex-container-j-s-around"> 
+
+         <div class="item"><p class="t1">1</p></div>
+         <div class="item"><p class="t1">2</p></div>
+         <div class="item"><p class="t1">3</p></div>
+         <div class="item"><p class="t1">4</p></div>
+         <div class="item"><p class="t1">5</p></div>
+
+    </div>
+    <br>
+    <h2>justify content : space evenly;</h2>
+    <div class="flex-container-j-s-evenly"> 
+
+         <div class="item"><p class="t1">1</p></div>
+         <div class="item"><p class="t1">2</p></div>
+         <div class="item"><p class="t1">3</p></div>
+         <div class="item"><p class="t1">4</p></div>
+         <div class="item"><p class="t1">5</p></div>
+
+    </div>
+    <br>
+    <hr style="width: 700px;">
+    <h1>4- align-item</h1>
+    <h2>align-item : flex-start</h2>
+    <div class="align-item-flex-start"> 
+        <div class="item"><p class="t1">1</p></div>
+        <div class="item"><p class="t1">2</p></div>
+        <div class="item"><p class="t1">3</p></div>
+        <div class="item"><p class="t1">4</p></div>
+        <div class="item"><p class="t1">5</p></div>
+
+   </div>
+   <br>
+   <h2>align-item : flex-end</h2>
+   <div class="align-item-flex-end"> 
+    <div class="item"><p class="t1">1</p></div>
+    <div class="item"><p class="t1">2</p></div>
+    <div class="item"><p class="t1">3</p></div>
+    <div class="item"><p class="t1">4</p></div>
+    <div class="item"><p class="t1">5</p></div>
+  </div>
+  <br>
+   <h2>align-item : center</h2>
+   <div class="align-item-center"> 
+    <div class="item"><p class="t1">1</p></div>
+    <div class="item"><p class="t1">2</p></div>
+    <div class="item"><p class="t1">3</p></div>
+    <div class="item"><p class="t1">4</p></div>
+    <div class="item"><p class="t1">5</p></div>
+  </div>
+  <br>
+   <h2>align-item : stretch</h2>
+   <div class="align-item-stretch"> 
+    <div class="item-1"><p class="t1">1</p></div>
+    <div class="item-1"><p class="t1">2</p></div>
+    <div class="item-1"><p class="t1">3</p></div>
+    <div class="item-1"><p class="t1">4</p></div>
+    <div class="item-1"><p class="t1">5</p></div>
+  </div>
+  <br>
+  <hr style="width: 700px;">
+  <h1>Properties for the Children (flex items)</h1>
+
+  <h2>Order</h2>
+  <div class="flex-container-j-s-evenly"> 
+
+    <div class="item" style="order:2;"><p class="t1">1</p></div>
+    <div class="item" style="order:3;"><p class="t1">2</p></div>
+    <div class="item" style="order:1;"><p class="t1">3</p></div>
+    <div class="item" style="order:5;"><p class="t1">4</p></div>
+    <div class="item" style="order:4;"><p class="t1">5</p></div>
+
+    </div>
+    <h2>flex-grow</h2>
+    <div class="flex-container-j-s-evenly"> 
+
+        <div class="item" style="flex-grow: 1;"><p class="t1">1</p></div>
+        <div class="item" style="flex-grow: 3;"><p class="t1">2</p></div>
+        <div class="item" style="flex-grow: 0.2;"><p class="t1">3</p></div>
+         
+
+    </div>
+    <h2>flex-shrink</h2>
+    <div class="flex-container-j-s-evenly"> 
+
+        <div class="item"><p class="t1">1</p></div>
+        <div class="item" style="flex: shrink 0;" ><p class="t1">2</p></div>
+        <div class="item"><p class="t1">3</p></div>
+        <div class="item"><p class="t1">4</p></div>
+        <div class="item"><p class="t1">5</p></div>
+        <div class="item"><p class="t1">6</p></div>
+        
+        
+ 
+   </div>
+
+<br>
+
+
+<!-- owner : qusai :T  -->
+<!-- owner : qusai :T  -->
+<!-- owner : qusai :T  -->
+<!-- owner : qusai :T  -->
+
+
+
+    
+    
+</body>
+</html>
