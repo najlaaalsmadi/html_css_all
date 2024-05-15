@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive</title>
+    <style>
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+   
+    background-color: black;
+}
+.column{
+    float: left;
+    width: 30%;
+    
+}
+.row{
+    margin: 0 -5px;
+}
+.row{
+    
+    content: "";
+    display: flex;
+    clear: both;
+    justify-content: space-evenly;
+    
+
+
+    
+}
+
+h2 {
+    font-size: 16px;
+}
+        .head{
+            background-image: url("imgheader2.jpg");
+            height: 600px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+           color: white;
+           position: relative;
+           opacity: 0.9;
+        }
+        .head button{
+            background-color: black;
+            font-size: 20px;
+           height: 25px;
+           color: white;
+ }
+ .head .text{
+    font-weight: bold;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+            transform: translate(-50%, -50%);
+ }
+ .head p{
+    font-size: 20px;
+ }
+ .head h1{
+    font-size: 35px;
+ }
+ .parent {
+    display: flex;
+    flex: 70%;
+  
+    /* grid-gap: 20px; */
+    align-content: stretch;
+    justify-items: stretch;
+    /* justify-content: space-evenly; */
+    flex-direction: row-reverse;
+    }
+    .column1 {
+       
+        color: black;
+    
+    }
+  
+
+ @media (max-width:800px) and (min-width:300px) {
+    .head p{
+    font-size: 6.5px;
+ }
+ .head h1{
+    font-size: 18px;
+ }
+    button{
+        font-size: 7px;
+        height: 18px;
+}
+.column{
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+}
+.content p{
+    font-size: 6.5px;
+ }
+ .content h2{
+    font-size: 16px;
+ }
+ .row{
+    content: "";
+    display: flex;
+    clear: both;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    
+}
+.content2_1 h2{
+    font-size: 16px;
+}
+.content2_1 p{
+    font-size: 6.5px;
+   
+}
+.footer{
+    font-size: 6.5px;
+}
+      
+      
+
+    }
+    .content2{
+        text-align: center;
+        width: 100%;
+    }
+    .card{
+        box-shadow: 0 4px 3px 0 rgba(0,0,0,0.2);
+        padding: 20px;
+        text-align: center;
+        
+background-color: white;
+        
+    }
+.card img{
+    width: 100%;
+  height: auto;
+}
+.content2_1{
+    background-color: white;
+}
+
+    </style>
+</head>
+<body>
+    <section class="head">
+       
+        <div class="text">
+            <h1>Welcome to responsive web</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.molestie unde alias quod harum maxime dolorum aspematur beatae incidunt quam enim.</p>
+            <button>Read more</button>
+        </div>
+
+      </section>
+      <section>
+<div class="content">
+<h2>responsive web Development</h2>
+<p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lobortis molestie leo, eu euismod nulla vehicula tincidunt. Ut at nunc placerat erat pharetra vestibulum nec sit amet justo. Donec tempus, tortor at feugiat consequat, velit mauris porta nibh, et maximus mi est
+</p>
+<div class="row">
+    <div class="column">
+        <div class="card">
+            <img src="1.jfif" alt="">
+            <h3>why responsive?</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lobortis molestie leo, eu euismod nulla vehicula tincidunt. Ut at nunc placerat erat pharetra vestibulum nec sit amet justo</p>
+        </div>
+    </div>
+    <div class="column">
+        <div class="card">
+            <img src="2.jfif" alt="">
+            <h3>Same Experience Everywhere</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lobortis molestie leo, eu euismod nulla vehicula tincidunt. Ut at nunc placerat erat pharetra vestibulum nec sit amet justo</p>
+        </div>
+    </div>
+        <div class="column">
+            <div class="card">
+                <img src="4.jfif" alt="">
+                <h3>Improve Your Accessibility</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lobortis molestie leo, eu euismod nulla vehicula tincidunt. Ut at nunc placerat erat pharetra vestibulum nec sit amet justo</p>
+            </div>
+    </div>
+</div>
+</div>
+      </section>
+      <section class="content2">
+        <div class="content2_1">
+            <h2>Develop your website</h2>
+            <p>Nullam odio ipsum, fringilla sed risus feugiat, sollicitudin convallis mauris. Integer dapibus odio quis risus tempor, nec volutpat nisl iaculis</p>
+    
+        <div class="parent">
+            <div class="column1" style="background-color: black; color: white; width: 751px;">
+                <h2>Contact Us</h2>
+                <p>
+                 Consectetur adipisicing elit. Esse, doloribus possimusvoluptatum, laudantium est incidunt?
+                </p> 
+                <p>info@webresponsive.com</p>
+            </div>
+            <div class="column1" style="background-color: rgb(64, 74, 201); color: white; width: 752px;">
+                <h2>Contact Us</h2>
+               <p>
+                Consectetur adipisicing elit. Esse, doloribus possimusvoluptatum, laudantium est incidunt?
+               </p> 
+               <p>info@webresponsive.com</p>
+            
+            </div>
+        </div>
+        </div>
+      </section>
+
+      <section class="footer">
+<p style="color: white; text-align: center;">Najlaa Alsmadi 16-5-2024</p>
+      </section>
+</body>
+</html>
